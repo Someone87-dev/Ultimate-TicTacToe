@@ -509,6 +509,7 @@
     function autoRestart() {
       setTimeout(() => {
         resetGame();
+
         if (gameMode === 'ai' && currentPlayer === 'O') {
           setTimeout(aiMove, 500); // AI makes the first move in the next game
         }
